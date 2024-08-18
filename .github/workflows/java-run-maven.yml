@@ -22,9 +22,5 @@ jobs:
         cache: maven
     - name: compile code
       run: javac Hello.java
-      
-  execute:
-     runs-on: ubuntu-latest
-     steps:
-     - name: run code
-       run: java Hello 
+    - name: run code
+      run: java Hello 
