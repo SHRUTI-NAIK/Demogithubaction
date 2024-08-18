@@ -7,8 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  compile:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,5 +21,8 @@ jobs:
     - name: compile code
       run: javac Hello.java
       
-    - name: run code
-      run: java Hello 
+  execute:
+     runs-on: ubuntu-latest
+     steps:
+     - name: run code
+       run: java Hello 
